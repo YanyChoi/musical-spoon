@@ -1,0 +1,19 @@
+.circle {
+  float: left;
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    object-fit:cover;
+    z-index: 3;
+}
+
+  #ue4 {
+    position: absolute; 
+    left: 25%;
+    top: 37%;
+  }
+  #vr {
+    position: absolute;
+    left: 56%;
+    top: 37%;
+  }

@@ -1,0 +1,73 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color:#000000;
+    /* background-image:url("img/wallpaper.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+h1, p {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+#title {
+    font-size: 100px;
+    position: relative;
+    top: 200px;
+    
+}
+#subtitle {
+    position: relative;
+    top: 150px;
+}
+.youtube {
+    position: relative;
+    border: 0;
+    top: 200px;
+    text-align: center;
+
+}
+.parallax1 {
+    background-image : url('img/wallpaper.jpg');
+    opacity: 1;
+    height: 100%;
+    
+    padding: 5;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+    background-image : url('img/roborecall.jpg');
+    height: 100%;
+    
+    padding: 5;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax3 {
+    background-image : url('img/pubg.jpg');
+    height: 100%;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.division {
+    height: 10;
+    background-color: #000000;
+}
