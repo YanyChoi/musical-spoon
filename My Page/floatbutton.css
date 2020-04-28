@@ -1,4 +1,12 @@
-
+.float {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 100;
+}
+.sidebar {
+    text-align: center;
+}
 input#menuicon {
     display: none;
 }
@@ -39,4 +47,24 @@ input#menuicon:checked + label span:nth-child(2) {
 input#menuicon:checked + label span:nth-child(3) {
     bottom: 50%;
     transform: translateY(50%) rotate(-45deg);
+}
+div.sidebar {
+    width: 300px;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 1;
+    transition: all .35s;
+}
+input#menuicon:checked + label + div {
+    right: 0;
+}
+
+input#menuicon:checked + label{
+    z-index: 10;
+}
+input#menuicon:checked + label span {
+    background: #000000;
 }

@@ -1,21 +1,15 @@
 html {
     scroll-behavior: smooth;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: Montserrat, 'Noto Sans KR', sans-serif;
 
 }
 body {
     padding: 0;
     margin: 0;
     background-color:#000000;
-    /* background-image:url("img/wallpaper.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat; */
 }
 h1, p {
+    position: relative;
     font-size: 40px;
     text-align: center;
     color: white;
@@ -30,10 +24,16 @@ h1, p {
     position: relative;
     top: 150px;
 }
+#VideoLayer {
+    position: fixed;
+    z-index: 999;
+    display: none;
+    background: none rgba(0, 0, 0, 0.9);
+    top: 10%;
+    left:24%;
+}
 .youtube {
     position: relative;
-    border: 0;
-    top: 200px;
     text-align: center;
 
 }
@@ -61,7 +61,16 @@ h1, p {
 .parallax3 {
     background-image : url('img/pubg.jpg');
     height: 100%;
-    
+    padding: 5;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax4 {
+    background-image: url('img/fortnite.jpg');
+    height: 100%;
+    padding: 5;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -70,4 +79,18 @@ h1, p {
 .division {
     height: 10;
     background-color: #000000;
+}
+#instagram, #facebook, #github {
+    position: relative;
+    top: 10px;
+
+}
+.table a {
+    text-decoration: none;
+    color: white;
+    font-size: 30pt;
+    position: relative;
+    text-align: center;
+    top: 200px;
+    left: 550px;
 }

@@ -1,11 +1,13 @@
 <html>
     <head>
         <title>My Page</title>
+        <script type="text/javascript" src="mypage.js"></script>
         <link rel="stylesheet" type="text/css" href="mypage.css">
         <link rel="stylesheet" type="text/css" href="basic.css">
         <link rel="stylesheet" type="text/css" href="circle.css">
         <link rel="stylesheet" type="text/css" href="floatbutton.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans+KR&display=swap" rel="stylesheet">        <script type="text/javascript" src="mypage.js"></script>
+        <link rel="stylesheet" type="text/css" href="button.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans+KR&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="wrap">
@@ -14,47 +16,82 @@
                     <ul>
                         <li><a href="#2017">2017 Projects</a></li>
                         <li><a href="#UI">VR UI 개발</a></li>
-                        <li><a href="#">VR 스트레스 해소방</a></li>
-                        <li><a href="#">Unreal Engine 공부</a></li>  
-                        <li><a href="#">Bottom</a></li>
+                        <li><a href="#stressroom">VR 스트레스 해소방</a></li>
+                        <li><a href="#study">Unreal Engine 공부</a></li>  
+                        <li><a href="#bottom">Bottom</a></li>
                     </ul>
-
-                </nav>
+                </nav> 
             </div>
+            <div class="float">
+                <input type="checkbox" id="menuicon">
+               <label for="menuicon">
+                    <span></span>
+                    <span></span>                             
+                    <span></span>
+                </label>
+                <div class="sidebar">
+                    <p style="color: #000;">Contacts</p>
+                    <a href="https://www.instagram.com/yhc0818/" id="instagram" target="_blank">
+                        <img src="img\instagram.png" height="100px"></a><br><br>
+                    <a href="https://www.facebook.com/profile.php?id=100007177246207" id="facebook" target="_blank">
+                        <img src="img\facebook.png" height="100px"></a><br><br>
+                    <a href="https://github.com/YanyChoi" id="github" target="_blank">
+                        <img src="img\github.png" height="100px"></a>
+                    <p style="color: #000; font-size: 10pt"><br>dydgkhs0818@gachon.ac.kr<br>dydghks0818@naver.com<footer>Copyrights by Yong Hwan Choi, 2019</p></footer>
+                </div>
+                </div>
             <div class="content"><a name="2017"></a>
                 <div class="parallax1">
                     <h1 id="title">2017 Projects</h1>
                     <p id="subtitle">고등학교 2학년 동안 진행했던 프로젝트</p>
                 </div><!--Background 1-->
-                <div class="division"></div><!--간격-->
-                <div class="parallax2"><!--Background 2--><a name="UI"></a>
-                    <h1 id="first">VR UI</h1>
+                <div class="division"></div><a name="UI"></a><!--간격-->
+                <div class="parallax2"><!--Background 2-->
+                    <h1>VR UI</h1>
                     <div class="circles">
                         <a href="http://www.unrealengine.com" target="_blank">
                             <img class="circle" id="ue4" src="img\ue4.jpg">
                         </a>
                         <img class="circle" id ="vr" src="img\vr.jpeg">
                     </div>
-
-                </div>
-                <div class="division"><!--간격-->
-                </div>
-                <div class="parallax3"><!--Background 3-->
+                    <h1 style="font-size: 60pt">+</h1>
+                    <h1 style="transform: rotate(90deg); font-size: 60pt">=</h1>
                     <div class="youtube">
-                        <iframe src="https://www.youtube.com/embed/O_wKe3Yfs2A" frameborder=0 width="640px" height="360px"></iframe>
+                       <button onclick="View()" style="font-family: Montserrat, sans-serif">Watch</button>
                     </div>
                 </div>
+                <div class="division"><!--간격--></div>
+                        <a name="stressroom"></a>
+                <div class="parallax3"><!--Background 3-->
 
+                    <h1 style="top: 50px">VR 스트레스 해소방</h1>
+                    <div class="circles">
+                        <img class="circle" id="stress" src="img\stress.jpg">
+                        <img class="circle" id="sports" src="img\sports.jpg">
+                    </div>
+                    <h1 style="top: 150px; font-size: 60pt">+</h1>
+
+                </div>
+                <div class="division">
+                    <a name="study"></a>
+                </div>
+                <div class="parallax4"><!--Background 4-->
+                    <h1>Unreal Engine 공부</h1>
+                    <table class="table">
+                        <tr><td> <a href="https://cafe.naver.com/unrealenginekr" target="_blank">언리얼 엔진 카페</a></td></tr>
+                        <tr><td><a href="https://unrealsummit.co.kr/" target="_blank">언리얼 서밋</a></td></tr>
+                        <tr><td><a href="http://book.interpark.com/product/BookDisplay.do?_method=detail&sc.saNo=001&sc.prdNo=265987523&gclid=CjwKCAjw583nBRBwEiwA7MKvoNzctI-1zluE4tzbr_CnXa-uqJ0Gz1B12AvFlVjLTz_Wl7Z535xJaxoCHPkQAvD_BwE&product2017=true" target="_blank">Visual Scripting</a></td></tr>
+                    </table>
+                
+                </div>
+                <a name="bottom"></a>
             </div>
 
         </div>
-            <div class="float">
-            <input type="checkbox" id="menuicon">
-            <label for="menuicon">
-                <span></span>
-                <span></span>                             
-                <span></span>
-                </label>
+        <div id="VideoLayer">
+                <iframe src="https://www.youtube.com/embed/O_wKe3Yfs2A" frameborder=0 width="800px" height="450px"></iframe>
+                <p style="color: while; cursor: pointer;" onclick="Close()">Close</p>
         </div>
+
     </body>
 </html>

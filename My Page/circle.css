@@ -7,13 +7,16 @@
     z-index: 3;
 }
 
-  #ue4 {
+  #ue4, #stress {
     position: absolute; 
     left: 25%;
-    top: 37%;
+    top: 800px;
   }
-  #vr {
+  #vr, #sports {
     position: absolute;
-    left: 56%;
-    top: 37%;
+    left: 55%;
+    top: 800px;
   }
+  #stress, #sports {
+    top: 1600px;
+  } 

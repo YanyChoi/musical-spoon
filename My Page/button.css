@@ -1,0 +1,43 @@
+  button:before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+  }
+  button{
+    background:rgb(0, 0, 0);
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    transition:800ms ease all;
+    cursor: pointer;
+    outline:none;
+  }
+  button:hover{
+    background:#fff;
+    color:rgb(0, 0, 0);
+  }
+  button:before, button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: rgb(0, 0, 0);
+    transition:0.35s ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before, button:hover:after{
+    width:100%;
+    transition:0.6s ease all;
+  }
+  
+  
